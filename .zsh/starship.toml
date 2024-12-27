@@ -1,0 +1,63 @@
+format = """${custom.user}\
+${custom.greet}\
+$directory\
+$character"""
+
+right_format = """
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$python\
+$cmd_duration"""
+
+# basic formats
+[directory]
+truncate_to_repo = false
+read_only = ' r'
+style = "bold white"
+
+[character]
+success_symbol = "[>](bold green)"
+error_symbol = "[x](bold red)"
+vimcmd_symbol = "[<](bold blue)"
+
+[cmd_duration]
+format = "[took $duration](italic white) "
+
+# git
+[git_branch]
+symbol = ''
+style = "bold yellow"
+
+[git_commit]
+style = "italic yellow"
+
+[git_state]
+style = "bold yellow"
+
+[git_status]
+format = '[$ahead_behind$all_status]($style) '
+ahead = ">"
+behind = "<"
+diverged = "<>"
+renamed = "r"
+deleted = "x"
+style = "bold italic yellow"
+
+[python]
+format = "[$virtualenv]($style) "
+
+[custom.user]
+command = 'whoami'
+when = ''' test "$HOME" = "$PWD" '''
+format = '[$output, is that you?]($style) '
+style = "italic"
+
+[custom.greet]
+command = 'uptime -p'
+when = ''' test "$HOME" = "$PWD" '''
+format = '''[$output]($style)
+'''
+style = "italic purple"

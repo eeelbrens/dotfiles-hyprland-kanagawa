@@ -1,0 +1,708 @@
+@import "color.css";
+
+* {
+    font-family: 'Iosevetica Mono', 'Sarasa Term J', 'IBM Plex Sans Arabic', 'Font Awesome 6 Free', 'Font Awesome 6 Brands', monospace;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+window#waybar {
+    background-color: transparent;
+    border: none;
+}
+
+.modules-left {
+    background-color: @base;
+    border: 3px solid @text;
+    border-radius: 12px;
+    padding-left:  14px;
+    padding-right: 14px;
+    padding-bottom: 2px;
+}
+
+.modules-center {
+    background-color: transparent;
+    border: none;
+    font-style: italic;
+    padding-bottom: 2px;
+}
+
+.modules-center #custom-playerctl {
+    background-color: @base;
+    border: 3px solid @text;
+    border-radius: 12px;
+    padding-left:  14px;
+    padding-right: 14px;
+    padding-bottom: 2px;
+}
+
+/* start of progress bar hack (+402 lines for end)*/
+
+.modules-center #custom-playerctl.0 {
+    background-image: linear-gradient(to right, @overlay0 0%, @base 0.1%);
+}
+
+.modules-center #custom-playerctl.1 {
+    background-image: linear-gradient(to right, @overlay0 1%, @base 1.1%);
+}
+
+.modules-center #custom-playerctl.2 {
+    background-image: linear-gradient(to right, @overlay0 2%, @base 2.1%);
+}
+
+.modules-center #custom-playerctl.3 {
+    background-image: linear-gradient(to right, @overlay0 3%, @base 3.1%);
+}
+
+.modules-center #custom-playerctl.4 {
+    background-image: linear-gradient(to right, @overlay0 4%, @base 4.1%);
+}
+
+.modules-center #custom-playerctl.5 {
+    background-image: linear-gradient(to right, @overlay0 5%, @base 5.1%);
+}
+
+.modules-center #custom-playerctl.6 {
+    background-image: linear-gradient(to right, @overlay0 6%, @base 6.1%);
+}
+
+.modules-center #custom-playerctl.7 {
+    background-image: linear-gradient(to right, @overlay0 7%, @base 7.1%);
+}
+
+.modules-center #custom-playerctl.8 {
+    background-image: linear-gradient(to right, @overlay0 8%, @base 8.1%);
+}
+
+.modules-center #custom-playerctl.9 {
+    background-image: linear-gradient(to right, @overlay0 9%, @base 9.1%);
+}
+
+.modules-center #custom-playerctl.10 {
+    background-image: linear-gradient(to right, @overlay0 10%, @base 10.1%);
+}
+
+.modules-center #custom-playerctl.11 {
+    background-image: linear-gradient(to right, @overlay0 11%, @base 11.1%);
+}
+
+.modules-center #custom-playerctl.12 {
+    background-image: linear-gradient(to right, @overlay0 12%, @base 12.1%);
+}
+
+.modules-center #custom-playerctl.13 {
+    background-image: linear-gradient(to right, @overlay0 13%, @base 13.1%);
+}
+
+.modules-center #custom-playerctl.14 {
+    background-image: linear-gradient(to right, @overlay0 14%, @base 14.1%);
+}
+
+.modules-center #custom-playerctl.15 {
+    background-image: linear-gradient(to right, @overlay0 15%, @base 15.1%);
+}
+
+.modules-center #custom-playerctl.16 {
+    background-image: linear-gradient(to right, @overlay0 16%, @base 16.1%);
+}
+
+.modules-center #custom-playerctl.17 {
+    background-image: linear-gradient(to right, @overlay0 17%, @base 17.1%);
+}
+
+.modules-center #custom-playerctl.18 {
+    background-image: linear-gradient(to right, @overlay0 18%, @base 18.1%);
+}
+
+.modules-center #custom-playerctl.19 {
+    background-image: linear-gradient(to right, @overlay0 19%, @base 19.1%);
+}
+
+.modules-center #custom-playerctl.20 {
+    background-image: linear-gradient(to right, @overlay0 20%, @base 20.1%);
+}
+
+.modules-center #custom-playerctl.21 {
+    background-image: linear-gradient(to right, @overlay0 21%, @base 21.1%);
+}
+
+.modules-center #custom-playerctl.22 {
+    background-image: linear-gradient(to right, @overlay0 22%, @base 22.1%);
+}
+
+.modules-center #custom-playerctl.23 {
+    background-image: linear-gradient(to right, @overlay0 23%, @base 23.1%);
+}
+
+.modules-center #custom-playerctl.24 {
+    background-image: linear-gradient(to right, @overlay0 24%, @base 24.1%);
+}
+
+.modules-center #custom-playerctl.25 {
+    background-image: linear-gradient(to right, @overlay0 25%, @base 25.1%);
+}
+
+.modules-center #custom-playerctl.26 {
+    background-image: linear-gradient(to right, @overlay0 26%, @base 26.1%);
+}
+
+.modules-center #custom-playerctl.27 {
+    background-image: linear-gradient(to right, @overlay0 27%, @base 27.1%);
+}
+
+.modules-center #custom-playerctl.28 {
+    background-image: linear-gradient(to right, @overlay0 28%, @base 28.1%);
+}
+
+.modules-center #custom-playerctl.29 {
+    background-image: linear-gradient(to right, @overlay0 29%, @base 29.1%);
+}
+
+.modules-center #custom-playerctl.30 {
+    background-image: linear-gradient(to right, @overlay0 30%, @base 30.1%);
+}
+
+.modules-center #custom-playerctl.31 {
+    background-image: linear-gradient(to right, @overlay0 31%, @base 31.1%);
+}
+
+.modules-center #custom-playerctl.32 {
+    background-image: linear-gradient(to right, @overlay0 32%, @base 32.1%);
+}
+
+.modules-center #custom-playerctl.33 {
+    background-image: linear-gradient(to right, @overlay0 33%, @base 33.1%);
+}
+
+.modules-center #custom-playerctl.34 {
+    background-image: linear-gradient(to right, @overlay0 34%, @base 34.1%);
+}
+
+.modules-center #custom-playerctl.35 {
+    background-image: linear-gradient(to right, @overlay0 35%, @base 35.1%);
+}
+
+.modules-center #custom-playerctl.36 {
+    background-image: linear-gradient(to right, @overlay0 36%, @base 36.1%);
+}
+
+.modules-center #custom-playerctl.37 {
+    background-image: linear-gradient(to right, @overlay0 37%, @base 37.1%);
+}
+
+.modules-center #custom-playerctl.38 {
+    background-image: linear-gradient(to right, @overlay0 38%, @base 38.1%);
+}
+
+.modules-center #custom-playerctl.39 {
+    background-image: linear-gradient(to right, @overlay0 39%, @base 39.1%);
+}
+
+.modules-center #custom-playerctl.40 {
+    background-image: linear-gradient(to right, @overlay0 40%, @base 40.1%);
+}
+
+.modules-center #custom-playerctl.41 {
+    background-image: linear-gradient(to right, @overlay0 41%, @base 41.1%);
+}
+
+.modules-center #custom-playerctl.42 {
+    background-image: linear-gradient(to right, @overlay0 42%, @base 42.1%);
+}
+
+.modules-center #custom-playerctl.43 {
+    background-image: linear-gradient(to right, @overlay0 43%, @base 43.1%);
+}
+
+.modules-center #custom-playerctl.44 {
+    background-image: linear-gradient(to right, @overlay0 44%, @base 44.1%);
+}
+
+.modules-center #custom-playerctl.45 {
+    background-image: linear-gradient(to right, @overlay0 45%, @base 45.1%);
+}
+
+.modules-center #custom-playerctl.46 {
+    background-image: linear-gradient(to right, @overlay0 46%, @base 46.1%);
+}
+
+.modules-center #custom-playerctl.47 {
+    background-image: linear-gradient(to right, @overlay0 47%, @base 47.1%);
+}
+
+.modules-center #custom-playerctl.48 {
+    background-image: linear-gradient(to right, @overlay0 48%, @base 48.1%);
+}
+
+.modules-center #custom-playerctl.49 {
+    background-image: linear-gradient(to right, @overlay0 49%, @base 49.1%);
+}
+
+.modules-center #custom-playerctl.50 {
+    background-image: linear-gradient(to right, @overlay0 50%, @base 50.1%);
+}
+
+.modules-center #custom-playerctl.51 {
+    background-image: linear-gradient(to right, @overlay0 51%, @base 51.1%);
+}
+
+.modules-center #custom-playerctl.52 {
+    background-image: linear-gradient(to right, @overlay0 52%, @base 52.1%);
+}
+
+.modules-center #custom-playerctl.53 {
+    background-image: linear-gradient(to right, @overlay0 53%, @base 53.1%);
+}
+
+.modules-center #custom-playerctl.54 {
+    background-image: linear-gradient(to right, @overlay0 54%, @base 54.1%);
+}
+
+.modules-center #custom-playerctl.55 {
+    background-image: linear-gradient(to right, @overlay0 55%, @base 55.1%);
+}
+
+.modules-center #custom-playerctl.56 {
+    background-image: linear-gradient(to right, @overlay0 56%, @base 56.1%);
+}
+
+.modules-center #custom-playerctl.57 {
+    background-image: linear-gradient(to right, @overlay0 57%, @base 57.1%);
+}
+
+.modules-center #custom-playerctl.58 {
+    background-image: linear-gradient(to right, @overlay0 58%, @base 58.1%);
+}
+
+.modules-center #custom-playerctl.59 {
+    background-image: linear-gradient(to right, @overlay0 59%, @base 59.1%);
+}
+
+.modules-center #custom-playerctl.60 {
+    background-image: linear-gradient(to right, @overlay0 60%, @base 60.1%);
+}
+
+.modules-center #custom-playerctl.61 {
+    background-image: linear-gradient(to right, @overlay0 61%, @base 61.1%);
+}
+
+.modules-center #custom-playerctl.62 {
+    background-image: linear-gradient(to right, @overlay0 62%, @base 62.1%);
+}
+
+.modules-center #custom-playerctl.63 {
+    background-image: linear-gradient(to right, @overlay0 63%, @base 63.1%);
+}
+
+.modules-center #custom-playerctl.64 {
+    background-image: linear-gradient(to right, @overlay0 64%, @base 64.1%);
+}
+
+.modules-center #custom-playerctl.65 {
+    background-image: linear-gradient(to right, @overlay0 65%, @base 65.1%);
+}
+
+.modules-center #custom-playerctl.66 {
+    background-image: linear-gradient(to right, @overlay0 66%, @base 66.1%);
+}
+
+.modules-center #custom-playerctl.67 {
+    background-image: linear-gradient(to right, @overlay0 67%, @base 67.1%);
+}
+
+.modules-center #custom-playerctl.68 {
+    background-image: linear-gradient(to right, @overlay0 68%, @base 68.1%);
+}
+
+.modules-center #custom-playerctl.69 {
+    background-image: linear-gradient(to right, @overlay0 69%, @base 69.1%);
+}
+
+.modules-center #custom-playerctl.70 {
+    background-image: linear-gradient(to right, @overlay0 70%, @base 70.1%);
+}
+
+.modules-center #custom-playerctl.71 {
+    background-image: linear-gradient(to right, @overlay0 71%, @base 71.1%);
+}
+
+.modules-center #custom-playerctl.72 {
+    background-image: linear-gradient(to right, @overlay0 72%, @base 72.1%);
+}
+
+.modules-center #custom-playerctl.73 {
+    background-image: linear-gradient(to right, @overlay0 73%, @base 73.1%);
+}
+
+.modules-center #custom-playerctl.74 {
+    background-image: linear-gradient(to right, @overlay0 74%, @base 74.1%);
+}
+
+.modules-center #custom-playerctl.75 {
+    background-image: linear-gradient(to right, @overlay0 75%, @base 75.1%);
+}
+
+.modules-center #custom-playerctl.76 {
+    background-image: linear-gradient(to right, @overlay0 76%, @base 76.1%);
+}
+
+.modules-center #custom-playerctl.77 {
+    background-image: linear-gradient(to right, @overlay0 77%, @base 77.1%);
+}
+
+.modules-center #custom-playerctl.78 {
+    background-image: linear-gradient(to right, @overlay0 78%, @base 78.1%);
+}
+
+.modules-center #custom-playerctl.79 {
+    background-image: linear-gradient(to right, @overlay0 79%, @base 79.1%);
+}
+
+.modules-center #custom-playerctl.80 {
+    background-image: linear-gradient(to right, @overlay0 80%, @base 80.1%);
+}
+
+.modules-center #custom-playerctl.81 {
+    background-image: linear-gradient(to right, @overlay0 81%, @base 81.1%);
+}
+
+.modules-center #custom-playerctl.82 {
+    background-image: linear-gradient(to right, @overlay0 82%, @base 82.1%);
+}
+
+.modules-center #custom-playerctl.83 {
+    background-image: linear-gradient(to right, @overlay0 83%, @base 83.1%);
+}
+
+.modules-center #custom-playerctl.84 {
+    background-image: linear-gradient(to right, @overlay0 84%, @base 84.1%);
+}
+
+.modules-center #custom-playerctl.85 {
+    background-image: linear-gradient(to right, @overlay0 85%, @base 85.1%);
+}
+
+.modules-center #custom-playerctl.86 {
+    background-image: linear-gradient(to right, @overlay0 86%, @base 86.1%);
+}
+
+.modules-center #custom-playerctl.87 {
+    background-image: linear-gradient(to right, @overlay0 87%, @base 87.1%);
+}
+
+.modules-center #custom-playerctl.88 {
+    background-image: linear-gradient(to right, @overlay0 88%, @base 88.1%);
+}
+
+.modules-center #custom-playerctl.89 {
+    background-image: linear-gradient(to right, @overlay0 89%, @base 89.1%);
+}
+
+.modules-center #custom-playerctl.90 {
+    background-image: linear-gradient(to right, @overlay0 90%, @base 90.1%);
+}
+
+.modules-center #custom-playerctl.91 {
+    background-image: linear-gradient(to right, @overlay0 91%, @base 91.1%);
+}
+
+.modules-center #custom-playerctl.92 {
+    background-image: linear-gradient(to right, @overlay0 92%, @base 92.1%);
+}
+
+.modules-center #custom-playerctl.93 {
+    background-image: linear-gradient(to right, @overlay0 93%, @base 93.1%);
+}
+
+.modules-center #custom-playerctl.94 {
+    background-image: linear-gradient(to right, @overlay0 94%, @base 94.1%);
+}
+
+.modules-center #custom-playerctl.95 {
+    background-image: linear-gradient(to right, @overlay0 95%, @base 95.1%);
+}
+
+.modules-center #custom-playerctl.96 {
+    background-image: linear-gradient(to right, @overlay0 96%, @base 96.1%);
+}
+
+.modules-center #custom-playerctl.97 {
+    background-image: linear-gradient(to right, @overlay0 97%, @base 97.1%);
+}
+
+.modules-center #custom-playerctl.98 {
+    background-image: linear-gradient(to right, @overlay0 98%, @base 98.1%);
+}
+
+.modules-center #custom-playerctl.99 {
+    background-image: linear-gradient(to right, @overlay0 99%, @base 99.1%);
+}
+
+/*end of progress bar hack (-402 lines for start)*/
+
+.modules-right {
+    background-color: @base;
+    border: 3px solid @text;
+    border-radius: 12px;
+    padding-left:  15px;
+    padding-right: 15px;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/*
+window#waybar.empty {
+    background-color: transparent;
+}
+window#waybar.solo {
+    background-color: #FFFFFF;
+}
+
+window#waybar.termite {
+    background-color: #3F3F3F;
+}
+
+window#waybar.chromium {
+    background-color: #000000;
+    border: none;
+}*/
+
+button {
+    border: none;
+    border-radius: 0;
+}
+
+button:hover {
+    background: inherit;
+    box-shadow: inset 0 0 @base;
+}
+
+#workspaces{
+}
+
+#workspaces button {
+    padding: 2px 2px; 
+    background-color: transparent;
+    color: @surface1;
+}
+
+#workspaces button:hover {
+    color: @surface1;
+}
+
+#workspaces button.focused, #workspaces button.active {
+    color: @text;
+}
+
+#workspaces button.urgent {
+    color: @red;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-playerctl,
+#language,
+#tray,
+#keyboard-state,
+#idle_inhibitor,
+#scratchpad,
+#power-profiles-daemon,
+#mpris,
+#custom-palestine,
+#custom-year,
+#custom-yearp,
+#custom-fafo {
+    color: @text;
+}
+
+#window {
+    color: @text;
+    padding-left: 10px;
+}
+
+#mode, #submap {
+    color: @mauve;
+}
+
+#window,
+#workspaces {
+    background-color: transparent;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#clock {
+}
+
+#battery {
+}
+
+#battery.charging, #battery.plugged {
+    color: @green;
+}
+
+#battery.warning:not(.charging) {
+  color: @peach;
+}
+
+#battery.critical:not(.charging) {
+    color: @red;
+}
+
+#power-profiles-daemon {
+}
+
+#power-profiles-daemon.performance {
+    color: @red;
+    border: 2px solid @red;
+}
+
+#power-profiles-daemon.balanced {
+    color: @text;
+}
+
+#power-profiles-daemon.power-saver {
+    color: @green;
+}
+
+label:focus {
+    background-color: @surface1;
+}
+
+#cpu {
+    color: @text;
+}
+
+#cpu.critical {
+    color: @red;
+}
+
+#memory {
+    color: @text;
+}
+
+#memory.critical {
+    color: @red;
+}
+
+#disk {
+    color: @text;
+}
+
+#network {
+    color: @mauve;
+}
+
+#network.disconnected, #network.disabled {
+    color: @surface1;
+}
+
+#pulseaudio {
+    color: @green;
+}
+
+#pulseaudio.muted {
+    color: @surface1;
+}
+
+#wireplumber {
+    background-color: @base;
+    color: @text;
+}
+
+#wireplumber.muted {
+    color: @surface1;
+}
+
+#mpris {
+    color: @text;
+}
+
+#mpris.spotify {
+    color: @green;
+}
+
+#mpris.paused {
+    color: @surface1;
+}
+
+#temperature {
+    color: @text;
+}
+
+#temperature.critical {
+    color: @red;
+}
+
+#tray {
+    color: @blue;
+    border: 2px solid @blue;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    color: @red;
+    border: 2px solid @blue;
+}
+
+#idle_inhibitor {
+    color: @surface1;
+}
+
+#idle_inhibitor.activated {
+    color: @mauve;
+}
+
+#language {
+    color: @mauve;
+}
+
+#privacy {
+    padding: 0;
+}
+
+#privacy-item {
+    padding: 0 5px;
+}
+
+#privacy-item.screenshare {
+    color: @teal;
+}
+
+#privacy-item.audio-in {
+    color: @green;
+}
+
+#privacy-item.audio-out {
+    color: @green;
+}
+
+#custom-yearprogress {
+    color: @text;
+}
+
+#custom-separator {
+    color: @surface1;
+}
