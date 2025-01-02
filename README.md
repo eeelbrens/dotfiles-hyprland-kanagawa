@@ -21,7 +21,7 @@ personal daily-driver dotfiles (yet another [Catppuccin](https://github.com/catp
 - waybar: `playerctl` for custom media module (see [second screenshot](screenshots/2.png))
 
 ### terminal stuff
-- terminal: [`kitty`](https://github.com/kovidgoyal/kitty)
+- terminal: [`alacritty`](https://github.com/alacritty/alacritty)
 - shell: `zsh`, modified with [`starship`](https://github.com/starship/starship) and a few plugins and modifications ([`zsh-autosuggestions`](https://github.com/zsh-users/zsh-autosuggestions), [`zsh-syntax-highlighting`](https://github.com/zsh-users/zsh-syntax-highlighting), [`zsh-shift-select`](https://github.com/jirutka/zsh-shift-select))
 - shell history: [`atuin`](atuin.sh)
 - text editor: [`nvim`](https://github.com/neovim/neovim) with [LazyVim](https://github.com/LazyVim/LazyVim) based config

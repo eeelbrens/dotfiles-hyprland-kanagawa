@@ -1,0 +1,19 @@
+[general]
+import = ["~/.config/alacritty/catppuccin-mocha.toml"]
+live_config_reload = true
+
+[window]
+padding = {x = 20, y = 20}
+dynamic_padding = true
+decorations = "None"
+
+[font]
+size = 13
+normal = {family = "Iosevetica Mono", style = "Medium"}
+bold   = {family = "Iosevetica Mono", style = "Bold"}
+italic = {family = "Iosevetica Mono", style = "Medium Italic"}
+bold_italic = {family = "Iosevetica Mono", style = "Bold Italic"}
+
+[cursor]
+style = {shape = "Block", blinking = "Off"}
+unfocused_hollow = false

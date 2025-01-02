@@ -60,4 +60,4 @@ command = 'uptime -p'
 when = ''' test "$HOME" = "$PWD" '''
 format = '''[$output]($style)
 '''
-style = "italic purple"
+style = "italic bold purple"
